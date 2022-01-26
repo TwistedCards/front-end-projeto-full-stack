@@ -9,7 +9,7 @@ import * as jQuery from 'jquery';
 })
 
 export class AppComponent implements AfterViewInit {
-  title = 'clientes-app';
+  title = 'transferencia';
   
   ngAfterViewInit(){
     (function($) {

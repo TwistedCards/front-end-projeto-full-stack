@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms'
 
 import { TransferenciasRoutingModule } from './transferencias-routing.module';
 import { TransferenciasFormComponent } from './transferencias-form/transferencias-form.component';
@@ -11,7 +12,8 @@ import { TransferenciasFormComponent } from './transferencias-form/transferencia
   ],
   imports: [
     CommonModule,
-    TransferenciasRoutingModule
+    TransferenciasRoutingModule,
+    FormsModule
   ], exports: [
     TransferenciasFormComponent
   ]

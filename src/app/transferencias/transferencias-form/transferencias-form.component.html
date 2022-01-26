@@ -1,1 +1,47 @@
-<p>transferencias-form works!</p>
+<h1 class="mt-4">Transferencia</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Efetuar a transferencia de uma conta para outra</li>
+</ol>
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Conta origem *</label>
+                    <input type="text" class="form-control" name="contaOrigem"/>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Conta destino *</label>
+                    <input type="text" class="form-control" name="contaDestino"/>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Valor *</label>
+                    <input type="number" class="form-control" name="valorTransferido"/>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Data transferencia *</label>
+                    <input type="text" class="form-control" name="dataTransferencia"/>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Data agendamento *</label>
+                    <input type="date" class="form-control" disabled="true" name="dataAgendamento"/>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-md-2" style="margin-bottom: 1%;">
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+        </div>
+</div>
