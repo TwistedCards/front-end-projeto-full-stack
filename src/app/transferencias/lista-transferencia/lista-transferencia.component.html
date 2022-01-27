@@ -9,6 +9,7 @@
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Transferiu</th>
                         <th>Origem</th>
                         <th>Destino</th>
                         <th>Valor</th>
@@ -19,6 +20,7 @@
                 <tbody>
                     <tr *ngFor="let transferencias of transferencias">
                         <td>{{ transferencias.id }}</td>
+                        <td>{{ transferencias.nome }}</td>
                         <td>{{ transferencias.contaOrigem }}</td>
                         <td>{{ transferencias.contaDestino }}</td>
                         <td>{{ transferencias.valorTransferido }}</td>
