@@ -4,18 +4,21 @@ import { FormsModule } from '@angular/forms'
 
 import { TransferenciasRoutingModule } from './transferencias-routing.module';
 import { TransferenciasFormComponent } from './transferencias-form/transferencias-form.component';
+import { ListaTransferenciaComponent } from './lista-transferencia/lista-transferencia.component';
 
 
 @NgModule({
   declarations: [
-    TransferenciasFormComponent
+    TransferenciasFormComponent,
+    ListaTransferenciaComponent
   ],
   imports: [
     CommonModule,
     TransferenciasRoutingModule,
     FormsModule
   ], exports: [
-    TransferenciasFormComponent
+    TransferenciasFormComponent,
+    ListaTransferenciaComponent
   ]
 })
 export class TransferenciasModule { }

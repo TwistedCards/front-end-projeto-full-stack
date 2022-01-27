@@ -1,0 +1,40 @@
+<h1 class="mt-4">Transferencias</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Consulta</li>
+</ol>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-warning" style="margin-bottom: 5%;">
+                <i class="fa fa-plus"></i> Novo
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Valor</th>
+                        <th>Transferencia</th>
+                        <th>Agendamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let transferencias of transferencias">
+                        <td>{{ transferencias.id }}</td>
+                        <td>{{ transferencias.contaOrigem }}</td>
+                        <td>{{ transferencias.contaDestino }}</td>
+                        <td>{{ transferencias.valorTransferido }}</td>
+                        <td>{{ transferencias.dataTransferencia }}</td>
+                        <td>{{ transferencias.dataAgendamento }}</td>
+                        <td>{{ transferencias.usuario.nome }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -26,9 +26,11 @@ export class TransferenciasFormComponent implements OnInit {
         .salvar(this.transferencia)
         .subscribe( response => {
           this.sucesso = true;
-        }, erroEncontrado => {
-          this.errors = erroEncontrado.error.errors;
-          console.log(erroEncontrado.error.errors)
+          this.errors = [];
+          this.transferencia = response;
+        }, errorResponse => {
+          this.sucesso = false;
+          this.errors = errorResponse.error.errors;
         }
         )
   }
