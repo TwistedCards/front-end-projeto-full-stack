@@ -13,7 +13,7 @@ export class TransferenciasFormComponent implements OnInit {
   transferencia: Transferencia = new Transferencia;
 
   constructor( private service: TransferenciasService) { 
-    this.transferencia = service.getTransferencia();
+    this.transferencia = new Transferencia();
   }
 
   ngOnInit(): void {
