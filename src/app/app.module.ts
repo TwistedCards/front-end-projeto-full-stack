@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component';
 import { TransferenciasModule } from './transferencias/transferencias.module';
+import { TransferenciasService } from './transferencias.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { TransferenciasModule } from './transferencias/transferencias.module';
     TemplateModule,
     TransferenciasModule
   ],
-  providers: [],
+  providers: [
+    TransferenciasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
