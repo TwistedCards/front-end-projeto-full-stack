@@ -10,9 +10,9 @@ import { TransferenciasService } from '../../transferencias.service'
 })
 export class TransferenciasFormComponent implements OnInit {
 
-  transferencia: Transferencia = new Transferencia;
+  transferencia: Transferencia;
 
-  constructor( private service: TransferenciasService) { 
+  constructor(private service: TransferenciasService) { 
     this.transferencia = new Transferencia();
   }
 
@@ -20,7 +20,11 @@ export class TransferenciasFormComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.transferencia)
+    this.service
+        .salvar(this.transferencia)
+        .subscribe( response => {
+          console.log(response);
+        })
   }
 
 }

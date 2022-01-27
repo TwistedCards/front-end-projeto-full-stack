@@ -3,6 +3,5 @@ export class Transferencia {
     contaOrigem ?: String;
     contaDestino ?: String;
     dataTransferencia ?: String;
-    dataAgendamento ?: String;
     valorTransferido ?: number;
 }
