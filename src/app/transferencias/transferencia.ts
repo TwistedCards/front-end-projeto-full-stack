@@ -6,4 +6,5 @@ export class Transferencia {
     dataAgendamento ?: String;
     valorTransferido ?: number;
     nome ?: String;
+    nomeDestino ?: String;
 }

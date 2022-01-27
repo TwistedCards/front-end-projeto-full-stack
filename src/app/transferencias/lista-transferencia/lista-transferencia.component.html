@@ -1,4 +1,4 @@
-<h1 class="mt-4">Transferencias</h1>
+<h1 class="mt-4">Transferências</h1>
 <ol class="breadcrumb mb-4">
     <li class="breadcrumb-item active">Consulta</li>
 </ol>
@@ -10,10 +10,11 @@
                     <tr>
                         <th>ID</th>
                         <th>Transferiu</th>
+                        <th>Recebeu</th>
                         <th>Origem</th>
                         <th>Destino</th>
                         <th>Valor</th>
-                        <th>Transferencia</th>
+                        <th>Transferência</th>
                         <th>Agendamento</th>
                     </tr>
                 </thead>
@@ -21,6 +22,7 @@
                     <tr *ngFor="let transferencias of transferencias">
                         <td>{{ transferencias.id }}</td>
                         <td>{{ transferencias.nome }}</td>
+                        <td>{{ transferencias.nomeDestino }}</td>
                         <td>{{ transferencias.contaOrigem }}</td>
                         <td>{{ transferencias.contaDestino }}</td>
                         <td>{{ transferencias.valorTransferido }}</td>

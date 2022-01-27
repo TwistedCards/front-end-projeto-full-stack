@@ -12,7 +12,6 @@ export class ListaTransferenciaComponent implements OnInit {
   transferencias: Transferencia[] = [];
 
   constructor(private service: TransferenciasService) {
-
   }
 
   ngOnInit(): void {
