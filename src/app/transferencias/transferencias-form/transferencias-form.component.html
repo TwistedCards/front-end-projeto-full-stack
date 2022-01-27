@@ -4,44 +4,51 @@
 </ol>
 
 <div class="container">
+    <form>
         <div class="row">
             <div class="col-md-3">
                 <div class="form-group">
                     <label>Conta origem *</label>
-                    <input type="text" class="form-control" name="contaOrigem"/>
+                    <input type="text" class="form-control" [(ngModel)]="transferencia.contaOrigem" 
+                        name="contaOrigem"/>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
                     <label>Conta destino *</label>
-                    <input type="text" class="form-control" name="contaDestino"/>
+                    <input type="text" class="form-control" [(ngModel)]="transferencia.contaDestino" 
+                        name="contaDestino"/>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="form-group">
                     <label>Valor *</label>
-                    <input type="number" class="form-control" name="valorTransferido"/>
+                    <input type="number" class="form-control" [(ngModel)]="transferencia.valorTransferido" 
+                        name="valorTransferido"/>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="form-group">
                     <label>Data transferencia *</label>
-                    <input type="text" class="form-control" name="dataTransferencia"/>
+                    <input type="text" class="form-control" name="dataTransferencia"
+                        [(ngModel)]="transferencia.dataTransferencia"/>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="form-group">
                     <label>Data agendamento *</label>
-                    <input type="date" class="form-control" disabled="true" name="dataAgendamento"/>
+                    <input type="date" class="form-control" disabled="true" 
+                        [ngModel]="transferencia.dataAgendamento" name="dataAgendamento"/>
                 </div>
             </div>
         </div>
        
         <div class="row">
             <div class="col-md-2" style="margin-bottom: 1%;">
-                <button type="submit" class="btn btn-success">
+                <button type="submit" class="btn btn-success" (click)="clicar()" >
                     <i class="fas fa-check"></i>
                 </button>
             </div>
         </div>
+    </form>
 </div>

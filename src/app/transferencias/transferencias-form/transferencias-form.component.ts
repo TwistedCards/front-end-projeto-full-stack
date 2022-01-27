@@ -11,9 +11,15 @@ export class TransferenciasFormComponent implements OnInit {
 
   transferencia: Transferencia = new Transferencia;
 
-  constructor() { }
+  constructor() { 
+    this.transferencia = new Transferencia();
+  }
 
   ngOnInit(): void {
+  }
+
+  clicar(){
+    console.log(this.transferencia)
   }
 
 }
