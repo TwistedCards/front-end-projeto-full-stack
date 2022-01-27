@@ -12,6 +12,7 @@ export class TransferenciasFormComponent implements OnInit {
 
   transferencia: Transferencia;
   sucesso: boolean = false;
+  errors: String[] = [];
 
   constructor(private service: TransferenciasService) { 
     this.transferencia = new Transferencia();
@@ -25,7 +26,11 @@ export class TransferenciasFormComponent implements OnInit {
         .salvar(this.transferencia)
         .subscribe( response => {
           this.sucesso = true;
-        })
+        }, erroEncontrado => {
+          this.errors = erroEncontrado.error.errors;
+          console.log(erroEncontrado.error.errors)
+        }
+        )
   }
 
 }

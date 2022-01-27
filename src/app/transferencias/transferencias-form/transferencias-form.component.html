@@ -10,6 +10,9 @@
                 <div class="alert alert-success" role="alert" *ngIf="sucesso == true">
                     Transferencia efetuada com sucesso!
                 </div>
+                <div class="alert alert-danger" role="alert" *ngFor="let erro of errors">
+                    {{erro}}
+                </div>
             </div>
         </div>
 
