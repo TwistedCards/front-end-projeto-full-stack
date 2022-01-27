@@ -6,6 +6,14 @@
 <div class="container">
     <form #transferenciaForm="ngForm" (ngSubmit)="onSubmit()">
         <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success" role="alert" *ngIf="sucesso == true">
+                    Transferencia efetuada com sucesso!
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-md-3">
                 <div class="form-group">
                     <label>Conta origem *</label>

@@ -11,6 +11,7 @@ import { TransferenciasService } from '../../transferencias.service'
 export class TransferenciasFormComponent implements OnInit {
 
   transferencia: Transferencia;
+  sucesso: boolean = false;
 
   constructor(private service: TransferenciasService) { 
     this.transferencia = new Transferencia();
@@ -23,7 +24,7 @@ export class TransferenciasFormComponent implements OnInit {
     this.service
         .salvar(this.transferencia)
         .subscribe( response => {
-          console.log(response);
+          this.sucesso = true;
         })
   }
 
